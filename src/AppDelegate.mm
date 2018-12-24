@@ -23,11 +23,13 @@ BMKMapManager* _mapManager;
     
 	// 要使用百度地图，请先启动BaiduMapManager
 	_mapManager = [[BMKMapManager alloc]init];
-    [[BMKLocationAuth sharedInstance] checkPermisionWithKey:@"Gim7dQ8hNycR0j4Uj2BdZUOZBZtBWshd" authDelegate:self];
-    BOOL ret = [_mapManager start:@"Gim7dQ8hNycR0j4Uj2BdZUOZBZtBWshd" generalDelegate:self];
+    [[BMKLocationAuth sharedInstance] checkPermisionWithKey:@"RTpFbLW3lwhyXvokCPDCoTgjde8UguLo" authDelegate:self];
+    BOOL ret = [_mapManager start:@"RTpFbLW3lwhyXvokCPDCoTgjde8UguLo" generalDelegate:self];
 	if (!ret) {
-		NSLog(@"manager start failed!");
-	}
+		NSLog(@"--- manager start failed!");
+    } else {
+        NSLog(@"--- manager start success!");
+    }
     
     [self.window setRootViewController:navigationController];
     [self.window makeKeyAndVisible];
@@ -37,10 +39,10 @@ BMKMapManager* _mapManager;
 - (void)onGetNetworkState:(int)iError
 {
     if (0 == iError) {
-        NSLog(@"联网成功");
+        NSLog(@"--- 联网成功");
     }
     else{
-        NSLog(@"onGetNetworkState %d",iError);
+        NSLog(@"--- onGetNetworkState %d",iError);
     }
     
 }
@@ -48,7 +50,7 @@ BMKMapManager* _mapManager;
 - (void)onGetPermissionState:(int)iError
 {
     if (0 == iError) {
-        NSLog(@"授权成功");
+        NSLog(@"--- 授权成功");
     }
     else {
         NSLog(@"--- onGetPermissionState %d",iError);

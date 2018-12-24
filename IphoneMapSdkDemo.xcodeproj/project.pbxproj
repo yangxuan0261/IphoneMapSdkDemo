@@ -302,7 +302,7 @@
 				ORGANIZATIONNAME = Baidu;
 				TargetAttributes = {
 					40A06DB6171BCEB80055E95E = {
-						DevelopmentTeam = N536VX8B2S;
+						DevelopmentTeam = JW38L9N6HH;
 						SystemCapabilities = {
 							com.apple.WAC = {
 								enabled = 0;
@@ -452,7 +452,7 @@
 				CLANG_MODULES_AUTOLINK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = N536VX8B2S;
+				DEVELOPMENT_TEAM = JW38L9N6HH;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -469,7 +469,7 @@
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.itengshe.ares;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yang.xuan;
 				PRODUCT_NAME = IphoneLocSDKDemo;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -486,7 +486,7 @@
 				CLANG_MODULES_AUTOLINK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = N536VX8B2S;
+				DEVELOPMENT_TEAM = JW38L9N6HH;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -503,7 +503,7 @@
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.itengshe.ares;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yang.xuan;
 				PRODUCT_NAME = IphoneLocSDKDemo;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
