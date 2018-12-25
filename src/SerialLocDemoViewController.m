@@ -17,6 +17,8 @@
 @property(nonatomic, assign) BOOL isNeedAddr;
 @property(nonatomic, assign) BOOL isLocationg;
 @property(nonatomic, assign) int locnum;
+@property(nonatomic, assign) CLLocationDirection dir;
+@property(nonatomic, assign) CLLocationDirection dir222;
 @property(nonatomic, assign) CLLocationDistance distanceConfig;
 
 @end
@@ -216,7 +218,7 @@
         MyLocation * loc = [[MyLocation alloc]initWithLocation:location.location withHeading:nil];
         [self addLocToMapView:loc];
         
-        [self updateMessage:[NSString stringWithFormat:@"lat=%.5f|lon=%.5f",location.location.coordinate.latitude, location.location.coordinate.longitude]];
+        [self updateMessage:[NSString stringWithFormat:@"lat=%.6f|lon=%.6f|dir=%.6f|dir222=%.6f",location.location.coordinate.latitude, location.location.coordinate.longitude, _dir, _dir222]];
         
     }
 
@@ -268,7 +270,8 @@
           didUpdateHeading:(CLHeading * _Nullable)heading
 {
 
-
+    _dir = heading.magneticHeading;
+    _dir222 = heading.trueHeading;
 
     NSLog(@"serial loc heading = %@", heading.description);
 
