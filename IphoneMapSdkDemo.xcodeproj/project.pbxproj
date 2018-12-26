@@ -19,6 +19,7 @@
 		40A06E94171BE6520055E95E /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40A06E93171BE6520055E95E /* OpenGLES.framework */; };
 		40D6490B174BA52900D03105 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40D648EB174BA52900D03105 /* MainWindow.xib */; };
 		40D64915174BA52900D03105 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40D648FA174BA52900D03105 /* RootViewController.xib */; };
+		DF326BAF21D31C440040F253 /* TSLocManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DF326BAE21D31C440040F253 /* TSLocManager.m */; };
 		E120760B1755B4AA00E70513 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = E12075F51755B4AA00E70513 /* AppDelegate.mm */; };
 		E12076141755B4AA00E70513 /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E12076071755B4AA00E70513 /* RootViewController.mm */; };
 		E14F48681F44315B005D1E76 /* MyLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = E14F48671F44315B005D1E76 /* MyLocation.m */; };
@@ -69,6 +70,8 @@
 		40A06E93171BE6520055E95E /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		40D648EB174BA52900D03105 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = src/MainWindow.xib; sourceTree = SOURCE_ROOT; };
 		40D648FA174BA52900D03105 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RootViewController.xib; path = src/RootViewController.xib; sourceTree = SOURCE_ROOT; };
+		DF326BAD21D31C440040F253 /* TSLocManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSLocManager.h; sourceTree = "<group>"; };
+		DF326BAE21D31C440040F253 /* TSLocManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSLocManager.m; sourceTree = "<group>"; };
 		E12075F41755B4AA00E70513 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = src/AppDelegate.h; sourceTree = SOURCE_ROOT; };
 		E12075F51755B4AA00E70513 /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = src/AppDelegate.mm; sourceTree = SOURCE_ROOT; };
 		E12076061755B4AA00E70513 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = src/RootViewController.h; sourceTree = SOURCE_ROOT; };
@@ -189,6 +192,7 @@
 		40A06DC1171BCEB80055E95E /* src */ = {
 			isa = PBXGroup;
 			children = (
+				DF326BAC21D31C440040F253 /* TSLocManager */,
 				E163698B1A26FA61004E2DBF /* ViewController */,
 				E163698C1A26FAC6004E2DBF /* Xib */,
 				E12075F41755B4AA00E70513 /* AppDelegate.h */,
@@ -222,6 +226,16 @@
 			);
 			name = Resources;
 			sourceTree = "<group>";
+		};
+		DF326BAC21D31C440040F253 /* TSLocManager */ = {
+			isa = PBXGroup;
+			children = (
+				DF326BAD21D31C440040F253 /* TSLocManager.h */,
+				DF326BAE21D31C440040F253 /* TSLocManager.m */,
+			);
+			name = TSLocManager;
+			path = src/TSLocManager;
+			sourceTree = SOURCE_ROOT;
 		};
 		E163698B1A26FA61004E2DBF /* ViewController */ = {
 			isa = PBXGroup;
@@ -302,7 +316,7 @@
 				ORGANIZATIONNAME = Baidu;
 				TargetAttributes = {
 					40A06DB6171BCEB80055E95E = {
-						DevelopmentTeam = JW38L9N6HH;
+						DevelopmentTeam = 3T8E374W68;
 						SystemCapabilities = {
 							com.apple.WAC = {
 								enabled = 0;
@@ -368,6 +382,7 @@
 				E12076141755B4AA00E70513 /* RootViewController.mm in Sources */,
 				E1F0A4AA1E975F32008AA427 /* CircleGeofenceDemoViewController.m in Sources */,
 				E1F0A47F1E952D2B008AA427 /* SingleLocDemoViewController.m in Sources */,
+				DF326BAF21D31C440040F253 /* TSLocManager.m in Sources */,
 				E14F48761F4EA99F005D1E76 /* IsInChinaDemoViewController.m in Sources */,
 				E14F48791F4EAF42005D1E76 /* BackgroundLocDemoViewController.m in Sources */,
 			);
@@ -452,7 +467,7 @@
 				CLANG_MODULES_AUTOLINK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = JW38L9N6HH;
+				DEVELOPMENT_TEAM = 3T8E374W68;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -469,7 +484,7 @@
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yang.xuan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yang.xuan1;
 				PRODUCT_NAME = IphoneLocSDKDemo;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
@@ -486,7 +501,7 @@
 				CLANG_MODULES_AUTOLINK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = JW38L9N6HH;
+				DEVELOPMENT_TEAM = 3T8E374W68;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -503,7 +518,7 @@
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yang.xuan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yang.xuan1;
 				PRODUCT_NAME = IphoneLocSDKDemo;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";

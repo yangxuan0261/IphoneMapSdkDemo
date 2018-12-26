@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 
+//*
+#import "TSLocManager.h"
+//*
 
 BMKMapManager* _mapManager;
 @implementation AppDelegate
@@ -30,6 +33,14 @@ BMKMapManager* _mapManager;
     } else {
         NSLog(@"--- manager start success!");
     }
+    
+    //*
+    [TSLocManager initLocManagerWithJSONString:nil];
+    [[TSLocManager shareInstance] startLocService];
+    [TSLocManager shareInstance].locCallBack = ^(NSString *JSONString) {
+        NSLog(@"定位 = %@",JSONString);
+    };
+    //*
     
     [self.window setRootViewController:navigationController];
     [self.window makeKeyAndVisible];
